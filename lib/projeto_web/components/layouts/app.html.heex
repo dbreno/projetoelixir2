@@ -1,0 +1,17 @@
+<header class="px-0 sm:px-0 lg:px-8">
+  <nav>
+    <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+    <ul id="nav-list">
+      <li><a href={~p"/"}>Home</a></li>
+      <li><a href={~p"/characters"}>Characters</a></li>
+      <li><a href={~p"/episodes"}>Episodes</a></li>
+      <li><a href={~p"/locations"}>Locations</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="px-0 py-0" style="width: 100%;">
+  <div class="" style="display: flex; justify-content: center; flex-direction: column;">
+    <.flash_group flash={@flash} />
+    <%= @inner_content %>
+  </div>
+</main>

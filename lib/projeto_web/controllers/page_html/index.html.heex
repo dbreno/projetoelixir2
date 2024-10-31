@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href={~p"/images/icon.ico"} sizes="32x32">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <title>Rick and Morty Wiki</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <span class="menu-icon" >&#9776;</span>
+                <ul id="nav-list">
+                    <li><a href={~p"/"} data-tip="Go to home page">Home</a></li>
+                    <li><a href={~p"/characters"} data-tip="Explore the characters">Characters</a></li>
+                    <li><a href={~p"/episodes"} data-tip="See episodes">Episodes</a></li>
+                    <li><a href={~p"/locations"} data-tip="Find locations">Locations</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 transparente" src={~p"/images/carrossel1.jpg"} alt="First slide">
+                </div>
+                <div class="carousel-text">
+                    <img src={~p"/images/Rick-and-Morty-Wiki-28-10-2024.png"} alt="Site logo">
+                    <p>Explore um universo inteiro de personagens, episódios e locais!</p> 
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 transparente" src={~p"/images/carrossel2.jpg"} alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 transparente" src={~p"/images/carrossel3.jpg"} alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <div class="infos">
+            <h1 class="hidden-h1">Tudo sobre o desenho</h1>
+            <p class="hidden-p">
+                Aqui na Rick and Morty Wiki, você tem o poder de pesquisar informações sobre todos os personagens, 
+                episódios e locais do desenho animado Rick and Morty. Para fazer isso, é muito simples 
+                basta pesquisar pelo nome do item o qual você deseja ver dentro da sua página correspondente, 
+                a qual pode ser encontrada na barra de pesquisa no canto superior da página.
+            </p>
+            <h1 class="hidden-h1">Sobre nós</h1>
+            <p class="hidden-p">
+                Somos um grupo de estudantes de Ciência da Computação da UFPB realizando o projeto final 
+                da disciplina de Porgramação Funcional. Esse site não possui nenhuma finalidade comercial, 
+                servindo como objeto de aprendizado para os membros do grupo quanto ao uso de Elixir e do Phoenix.
+                <p style="text-align: center;">
+                
+                    <strong>ANTONIO AUGUSTO DANTAS NETO | DAVI DE LACERDA TEIXEIRA | DEIVILY BRENO SILVA CARNEIRO</strong>
+                
+                </p>
+                
+
+            </p>
+            <div id="hidden-githubs">
+                <a href="https://github.com/AntonioaDn" target="_blank">
+                    <img src="https://avatars.githubusercontent.com/u/142694568?v=4" alt="GitHub" style="width: 72px; height: 72px;" class="GitHub_icon">
+                </a>
+                <a href="https://github.com/DavideLacerdaT" target="_blank">
+                    <img src="https://avatars.githubusercontent.com/u/166348551?v=4" alt="GitHub" style="width: 72px; height: 72px;" class="GitHub_icon">
+                </a>
+                <a href="https://github.com/dbreno" target="_blank">
+                    <img src="https://avatars.githubusercontent.com/u/88194716?v=4" alt="GitHub" style="width: 72px; height: 72px;" class="GitHub_icon">
+                </a>
+            </div>
+        </div>
+
+        <img src={~p"/images/IMG_6054.png"} alt="Rick and Morty" id="rick-morty-img">
+
+        <!-- Scripts do Bootstrap e jQuery -->
+    </body>
+</html>

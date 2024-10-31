@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../imgs/icon.ico" sizes="32x32">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <title>Rick and Morty Wiki</title>
+    </head>
+    <body>
+        <main class="mains">
+            <div class="title_top">
+              <img src={~p'/images/rick_stick.png'} alt="rick_stick" class="sticker_left">
+              <h1 class="titles">Episodes</h1>
+              <img src={~p'/images/morty_stick.png'} alt="morty_stick" class="sticker_right">
+            </div>
+            <div class="filter-form">
+                <h2>Filter Episodes</h2>
+                <form id="episode-filters" action={~p"/episodes"} method="get">
+                  <div class="filter-field">
+                    <label for="episode-name">Name:</label>
+                    <input type="text" id="episode-name" name="name" placeholder="Episode Name">
+                  </div>
+                  <div class="filter-field">
+                    <label for="episode-id">ID:</label>
+                    <input type="number" id="episode-id" name="id" placeholder="Episode ID">
+                  </div>
+                  <div class="filter-field">
+                    <label for="episode-code">Code:</label>
+                    <input type="text" id="episode-code" name="episode_code" placeholder="e.g. S01E01">
+                  </div>
+                  <button type="submit">Apply Filters</button>
+                </form>
+            </div>
+            <div class="episode-card-container">
+                <%= for episode <- @episodes do %>
+                  <div class='episode-card-content'>
+                  <h2 id="card_name" class={if String.length(episode["name"]) > 20, do: "long-title", else: ""}>
+                    <%= episode["name"] %>
+                  </h2>
+                    <p><strong>Episode ID:</strong> <%= episode["id"] %></p>
+                    <p><strong>Air date:</strong> <%= episode["air_date"] %></p>
+                  </div>
+                <% end %>
+            </div>
+        </main>
+    </body>
+</html>

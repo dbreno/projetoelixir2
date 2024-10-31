@@ -1,0 +1,9 @@
+<h1><%= @episode["nome"] %></h1>
+<p>Data de Exibição: <%= @episode["data_exibicao"] %></p>
+<p>Episódio: <%= @episode["episodio"] %></p>
+<h2>Personagens:</h2>
+<ul>
+  <%= for character <- @episode["personagens"] do %>
+    <li><%= character %></li>
+  <% end %>
+</ul>

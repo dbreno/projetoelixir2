@@ -1,0 +1,8 @@
+<h1><%= @character["nome"] %></h1>
+<p>Status: <%= @character["status"] %></p>
+<p>Espécie: <%= @character["especie"] %></p>
+<p>Tipo: <%= @character["tipo"] %></p>
+<p>Gênero: <%= @character["genero"] %></p>
+<p>Origem: <%= @character["origem"]["nome"] %></p>
+<p>Localização: <%= @character["localizacao"]["nome"] %></p>
+<img src="<%= @character["imagem"] %>" alt="<%= @character["nome"] %>">
